@@ -81,8 +81,8 @@ status_widgets=$(get "@onelight_widgets")
 time_format=$(get "@onelight_time_format" "%R")
 date_format=$(get "@onelight_date_format" "%d/%m/%Y")
 
-set "status-right" "#[fg=$onelight_white,bg=$onelight_black,nounderscore,noitalics]${time_format}  ${date_format} ${status_widgets}#[fg=$onelight_white,bg=$onelight_black,bold]  #h "
-set "status-left" "#[fg=$onelight_white,bg=$onelight_black,bold] #S #{prefix_highlight}"
+set "status-right" "#[fg=$onelight_white,bg=$onelight_black,nounderscore,noitalics]${time_format}  ${date_format} #[fg=$onelight_blue,bg=$onelight_black]#[fg=$onelight_blue,bg=$onelight_blue]#[fg=$onelight_black, bg=$onelight_blue]${status_widgets} #[fg=$onelight_green,bg=$onelight_blue,nobold,nounderscore,noitalics]#[fg=$onelight_black,bg=$onelight_green,bold] #h #[fg=$onelight_yellow, bg=$onelight_green]#[fg=$onelight_red,bg=$onelight_yellow]"
+set "status-left" "#[fg=$onelight_black,bg=$onelight_green,bold] #S #{prefix_highlight}#[fg=$onelight_green,bg=$onelight_black,nobold,nounderscore,noitalics]"
 
-set "window-status-format" " #I  #W "
-set "window-status-current-format" " #I  #W "
+set "window-status-format" "#[fg=$onelight_black,bg=$onelight_black,nobold,nounderscore,noitalics]#[fg=$onelight_white,bg=$onelight_black] #I  #W #[fg=$onelight_black,bg=$onelight_black,nobold,nounderscore,noitalics]"
+set "window-status-current-format" "#[fg=$onelight_black,bg=$onelight_yellow,nobold,nounderscore,noitalics]#[fg=$onelight_visual_grey,bg=$onelight_yellow,nobold] #I  #W #[fg=$onelight_yellow,bg=$onelight_black,nobold,nounderscore,noitalics]"
