@@ -1,5 +1,5 @@
 #!/bin/bash
-onelight_black="#e5e9f0"
+onelight_black="#f3f3f3"
 onelight_blue="#61afef"
 onelight_yellow="#e5c07b"
 onelight_red="#e06c75"
